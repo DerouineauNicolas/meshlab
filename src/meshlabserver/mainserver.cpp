@@ -713,13 +713,13 @@ int main(int argc, char *argv[])
 			argum = "\"" + argum + "\"";
 		cmdline = cmdline + argum + " ";
 	}
-    if (!commandline::validateCommandLine(cmdline.trimmed()))
+    /*if (!commandline::validateCommandLine(cmdline.trimmed()))
     {
         printf("CommandLine Syntax Error: please refer to the following documentation for a complete list of the MeshLabServer parameters.\n");
         commandline::usage();
 		//system("pause");
         exit(-1);
-    }
+    }*/
 
 	QSettings settings(MeshLabApplication::organization(),MeshLabApplication::appArchitecturalName(MeshLabApplication::HW_64BIT));
 
